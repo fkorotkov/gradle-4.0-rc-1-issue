@@ -14,4 +14,5 @@ env:
   - GRADLE_VERSION=3.5
   - GRADLE_VERSION=4.0-rc-1
 
-script: ./gradlew wrapper --gradle-version $GRADLE_VERSION && ./gradlew check
+install: ./gradlew wrapper --gradle-version $GRADLE_VERSION
+script: ./gradlew check
