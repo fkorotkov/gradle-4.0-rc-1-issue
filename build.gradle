@@ -1,0 +1,14 @@
+apply plugin: "java"
+
+repositories {
+    mavenLocal()
+    jcenter()
+    mavenCentral()
+    maven { setUrl("https://repo.gradle.org/gradle/repo") }
+    maven { setUrl("https://repository.cloudera.com/artifactory/public") }
+}
+
+dependencies {
+    compile 'org.apache.hive:hive-jdbc:0.12.0-cdh5.1.3'
+    compile 'com.google.guava:guava:18.0'
+}
